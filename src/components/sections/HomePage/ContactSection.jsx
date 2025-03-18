@@ -1,6 +1,6 @@
 "use client";
-import { useState, useEffect } from 'react';
-import emailjs from '@emailjs/browser';
+import { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
   // Initialize EmailJS
@@ -9,9 +9,9 @@ export default function ContactSection() {
   }, []);
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleSubmit = async (e) => {
@@ -33,12 +33,11 @@ export default function ContactSection() {
 
       console.log("Success!", result.text);
       setFormData({
-        name: '',
-        email: '',
-        message: ''
+        name: "",
+        email: "",
+        message: "",
       });
       alert("Message sent successfully!");
-
     } catch (error) {
       console.error("Failed to send message:", error);
       alert("Failed to send message. Please try again.");
@@ -48,7 +47,7 @@ export default function ContactSection() {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -64,7 +63,7 @@ export default function ContactSection() {
               Message sent successfully!
             </div>
           )}
-          
+
           {status.error && (
             <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
               {status.error}
@@ -73,7 +72,10 @@ export default function ContactSection() {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >
                 Name
               </label>
               <input
@@ -88,7 +90,10 @@ export default function ContactSection() {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >
                 Email
               </label>
               <input
@@ -103,7 +108,10 @@ export default function ContactSection() {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-black dark:text-gray-300">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-black dark:text-gray-300"
+              >
                 Message
               </label>
               <textarea
@@ -123,7 +131,7 @@ export default function ContactSection() {
                 className="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={status.submitting}
               >
-                {status.submitting ? 'Sending...' : 'Send Message'}
+                {status.submitting ? "Sending..." : "Send Message"}
               </button>
             </div>
           </form>
