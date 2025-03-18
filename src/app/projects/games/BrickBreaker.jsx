@@ -158,7 +158,7 @@ const BrickBreaker = ({ isPaused, updateGameState }) => {
         startGameLoop();
       }
     }
-  }, [isPaused, gameStarted, isGameOver]);
+  }, [isPaused, gameStarted, score, isGameOver, startGameLoop]);
 
   // Update parent component with game state
   useEffect(() => {
@@ -370,7 +370,7 @@ const BrickBreaker = ({ isPaused, updateGameState }) => {
 
       return startGameLoop();
     }
-  }, [gameStarted, isGameOver, score, isPaused]);
+  }, [gameStarted, isGameOver, score, isPaused, initializeGame, startGameLoop]);
 
   // Draw pause/game over screen
   useEffect(() => {

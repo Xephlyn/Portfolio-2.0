@@ -1,4 +1,5 @@
 "use client";
+
 import Head from "next/head";
 import { useState } from "react";
 import EnergenticDesign from "../../../components/sections/designs/energetic";
