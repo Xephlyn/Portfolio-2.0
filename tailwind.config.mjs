@@ -13,5 +13,10 @@ export default {
       },
     },
   },
-  plugins: [],
+  darkMode: "class",
+  theme:{
+    extend: {},
+  },
+  plugins: []
+
 };
