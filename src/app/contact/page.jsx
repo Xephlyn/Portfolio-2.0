@@ -83,8 +83,8 @@ export default function ContactPage() {
             Get In Touch
           </h1>
           <p className="text-xl text-center mb-12 max-w-2xl mx-auto">
-            Have a project in mind or just want to say hello? I'd love to hear
-            from you.
+            Have a project in mind or just want to say hello? I&apos;d love to
+            hear from you.
           </p>
 
           <div className="max-w-2xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">

@@ -682,8 +682,8 @@ const BusinessDesign = () => {
             Smart Pet Furniture Solutions
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Functional designs that prioritize both aesthetics and your pet's
-            comfort
+            Functional designs that prioritize both aesthetics and your
+            pet&apos;s comfort
           </p>
         </div>
 
@@ -910,7 +910,7 @@ const BusinessDesign = () => {
               30-Day Guarantee
             </h3>
             <p className="text-gray-600">
-              If your pet doesn't love it, return within 30 days for a full
+              If your pet doesn&apos;t love it, return within 30 days for a full
               refund, no questions asked.
             </p>
           </div>

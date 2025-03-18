@@ -42,13 +42,12 @@ export default function ThankYouPage() {
         </h1>
 
         <p className="text-xl mb-8 dark:text-gray-300">
-          Your message has been received. I'll get back to you as soon as
-          possible.
+          Your message has been received. I&apos;ll to you as soon as possible.
         </p>
 
         <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
           <p className="text-lg mb-6 dark:text-gray-300">
-            While you're waiting, feel free to explore more of my work or
+            While you&apos;re waiting, feel free to explore more of my work or
             connect with me on social media.
           </p>
 
@@ -70,7 +69,8 @@ export default function ThankYouPage() {
         </div>
 
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          You'll be automatically redirected to the homepage in a few seconds.
+          You&apos;ll be automatically redirected to the homepage in a few
+          seconds.
         </p>
       </div>
     </div>

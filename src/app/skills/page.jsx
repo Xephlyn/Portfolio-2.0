@@ -151,7 +151,7 @@ export default function SkillsPage() {
             href="/contact"
             className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-xl font-medium text-white hover:from-blue-600 hover:to-purple-700 transition-colors shadow-lg hover:shadow-xl"
           >
-            Let's Work Together
+            Let&apos;s Work Together
           </Link>
         </div>
       </div>

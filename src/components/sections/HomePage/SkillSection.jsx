@@ -33,17 +33,17 @@ export default function SkillsSection() {
           My Skills
         </h2>
         <h3 className="text-1xl font-bold text-center mb-12 text-gray-400 dark:text-white ">
-          Driven by a natural curiosity and passion for learning, I've
+          Driven by a natural curiosity and passion for learning, I&apos;ve
           cultivated a diverse skillset in web and application development. My
           proactive approach to exploring new technologies has led me to become
           proficient in front-end development, including HTML, CSS, JavaScript,
           React, and Next.js. I possess a strong foundation in database
           interaction and am eager to expand my experience in this area. Beyond
-          technical skills, I'm a critical thinker and adept problem-solver,
-          committed to collaborating and empowering others to achieve their
-          goals within the tech landscape. I thrive in environments where I can
-          leverage my abilities to create impactful solutions and contribute to
-          a team's success.
+          technical skills, I&apos;m a critical thinker and adept
+          problem-solver, committed to collaborating and empowering others to
+          achieve their goals within the tech landscape. I thrive in
+          environments where I can leverage my abilities to create impactful
+          solutions and contribute to a team&apos;s success.
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skills.map((skill, index) => (

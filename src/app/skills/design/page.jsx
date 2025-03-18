@@ -51,9 +51,9 @@ export default function page() {
               <div className="col-span-2 transform -rotate-1">
                 <div className="border-l-4 border-pink-400 dark:border-pink-500 pl-6 py-2">
                   <p className="text-xl leading-relaxed mb-6 dark:text-gray-200 text-gray-800">
-                    In today's digital world, your website is often the first
-                    impression potential customers have of your business. Even
-                    if you sell high-quality products, a poorly designed or
+                    In today&apos;s digital world, your website is often the
+                    first impression potential customers have of your business.
+                    Even if you sell high-quality products, a poorly designed or
                     outdated site can turn customers away before they ever see
                     what you offer.
                   </p>
@@ -72,8 +72,8 @@ export default function page() {
                   <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-yellow-300 dark:bg-yellow-600 rounded-full opacity-70"></div>
                   <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-pink-300 dark:bg-pink-700 rounded-full opacity-70"></div>
                   <p className="text-xl leading-relaxed px-16 text-center italic font-medium mb-12 dark:text-white text-gray-800">
-                    A strong design isn't just about looks—it sets the tone for
-                    your brand, builds trust, and influences purchasing
+                    A strong design isn&apos;t just about looks—it sets the tone
+                    for your brand, builds trust, and influences purchasing
                     decisions.
                   </p>
                 </div>
@@ -104,11 +104,11 @@ export default function page() {
                   Concepts
                 </h2>
                 <p className="text-xl leading-relaxed text-center max-w-3xl mx-auto dark:text-gray-300 text-gray-700">
-                  Below, you'll find three distinct website concepts for the
-                  same business and products, each showcasing a different brand
-                  identity. This demonstrates how design can shift the entire
-                  feel of a business, proving that thoughtful web design is a
-                  powerful tool for branding and success.
+                  Below, you&apos;ll find three distinct website concepts for
+                  the same business and products, each showcasing a different
+                  brand identity. This demonstrates how design can shift the
+                  entire feel of a business, proving that thoughtful web design
+                  is a powerful tool for branding and success.
                 </p>
               </div>
             </div>
@@ -196,9 +196,9 @@ export default function page() {
 
                 <p className="text-xl text-center leading-relaxed max-w-3xl mx-auto dark:text-gray-300 text-gray-700">
                   A strong online presence starts with thoughtful, intentional
-                  design. I specialize in creating websites that don't just look
-                  good — they tell your brand's story, connect with your
-                  audience, and drive results. By blending creativity with
+                  design. I specialize in creating websites that don&apos;t just
+                  look good — they tell your brand&apos;s story, connect with
+                  your audience, and drive results. By blending creativity with
                   strategy, I help bring your business to life in the digital
                   space, building a site that reflects your vision and sets you
                   apart from the competition.

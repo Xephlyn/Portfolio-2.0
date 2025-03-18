@@ -11,10 +11,10 @@ export default function GoalsSection() {
             innovative ideas to fruition. I aim to leverage my technical
             experience and problem-solving skills to bridge the gap between
             concept and reality, particularly for those who feel they lack the
-            resources or expertise to realize their vision. I'm passionate about
-            creating a streamlined and accessible process that simplifies the
-            journey from initial spark to tangible product, enabling others to
-            confidently transform their ideas into impactful solutions.
+            resources or expertise to realize their vision. I&apos;m passionate
+            about creating a streamlined and accessible process that simplifies
+            the journey from initial spark to tangible product, enabling others
+            to confidently transform their ideas into impactful solutions.
             Ultimately, I strive to facilitate innovation and contribute to a
             world where more people have the opportunity to bring their unique
             contributions to life.{" "}

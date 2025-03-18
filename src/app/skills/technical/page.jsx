@@ -132,13 +132,13 @@ export default function TechnicalPage() {
           </h2>
           <p className="text-xl max-w-3xl mx-auto text-gray-300 dark:text-gray-300 mb-10">
             Implementing advanced technical solutions creates a competitive
-            advantage in today's digital landscape
+            advantage in today&apos;s digital landscape
           </p>
           <button
             onClick={goToContact}
             className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-xl font-medium text-white hover:from-blue-600 hover:to-purple-700 transition-colors shadow-lg hover:shadow-xl"
           >
-            Let's Build Something Amazing
+            Let&apos;s Build Something Amazing
           </button>
         </div>
       </section>
