@@ -1,0 +1,25 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/next",
+        "config": {
+          "buildCommand": "next build",
+          "devCommand": "next dev"
+        }
+      }
+    ],
+    "buildCommand": "next build",
+    "devCommand": "next dev",
+    "framework": "nextjs",
+    "outputDirectory": ".next",
+    "routes": [
+      {
+        "src": "/projects/games/brickbreaker(.*)",
+        "dest": "/projects/games/brickbreaker/index.html",
+        "headers": {
+          "x-nextjs-page": "/projects/games/brickbreaker"
+        }
+      }
+    ]
+  }

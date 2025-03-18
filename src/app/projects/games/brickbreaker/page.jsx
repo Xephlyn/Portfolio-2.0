@@ -3,16 +3,28 @@
 import { useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import BrickBreaker from "../BrickBreaker";
+import dynamic from "next/dynamic";
+
+// Dynamically import the BrickBreaker component with SSR disabled
+const BrickBreaker = dynamic(
+  () => import("../BrickBreaker"),
+  { ssr: false } // This is crucial - it prevents any server-side rendering
+);
 
 export default function BrickBreakerPage() {
   const router = useRouter();
   const [isPaused, setIsPaused] = useState(false);
+  const [isClient, setIsClient] = useState(false);
   const gameStateRef = useRef({
     isStarted: false,
     isGameOver: false,
     score: 0,
   });
+
+  // Set isClient to true when component mounts (client-side only)
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   // This effect syncs the game state from the BrickBreaker component
   const updateGameState = (state) => {
@@ -103,7 +115,17 @@ export default function BrickBreakerPage() {
       {/* Game Container */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="bg-gray-800/50 dark:bg-gray-800/50 rounded-xl shadow-2xl overflow-hidden p-6">
-          <BrickBreaker />
+          {/* Only render BrickBreaker on the client side */}
+          {isClient ? (
+            <BrickBreaker
+              isPaused={isPaused}
+              updateGameState={updateGameState}
+            />
+          ) : (
+            <div className="flex justify-center items-center h-96">
+              <div className="text-xl text-purple-300">Loading game...</div>
+            </div>
+          )}
         </div>
       </section>
 

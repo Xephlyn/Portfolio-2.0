@@ -14,8 +14,18 @@ export default function ContactSection() {
     message: "",
   });
 
+  // Add this status state
+  const [status, setStatus] = useState({
+    submitting: false,
+    submitted: false,
+    error: null,
+  });
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Update status to submitting
+    setStatus({ submitting: true, submitted: false, error: null });
 
     try {
       const templateParams = {
@@ -37,10 +47,18 @@ export default function ContactSection() {
         email: "",
         message: "",
       });
-      alert("Message sent successfully!");
+
+      // Update status to submitted
+      setStatus({ submitting: false, submitted: true, error: null });
     } catch (error) {
       console.error("Failed to send message:", error);
-      alert("Failed to send message. Please try again.");
+
+      // Update status with error
+      setStatus({
+        submitting: false,
+        submitted: false,
+        error: "Failed to send message. Please try again.",
+      });
     }
   };
 
